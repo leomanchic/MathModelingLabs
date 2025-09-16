@@ -16,12 +16,9 @@
 git clone https://github.com/leomanchic/MathModelingLabs.git
 cd MathModelingLabs
 ```
-2. **Создайте виртуальное окружение**
-python -m venv venv
-
-source venv/bin/activate  # Linux/Mac
-# или
-venv\Scripts\activate     # Windows
+2. **Создайте виртуальное окружение:**
+ - python -m venv venv
+ - source venv/bin/activate  # Linux/Mac venv\Scripts\activate     # Windows
 
 
 3. **Установите зависимости**
