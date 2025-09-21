@@ -71,7 +71,7 @@ alpha_values = [0.0, 0.5, 0.9]
 # Создаем фигуру с 3x3 subplots
 fig, axes = plt.subplots(3, 3, figsize=(12, 12))
 plt.subplots_adjust(hspace=0.3, wspace=0.2)
-plt.pause(5)
+# plt.pause(5)
 # Инициализируем графы и состояния для каждой комбинации параметров
 graphs = []
 positions = []
@@ -123,6 +123,7 @@ def update(t):
 
 # Создаем анимацию
 ani = FuncAnimation(fig, update, frames=T+1, interval=300, repeat=False)
+ani.save('animation.gif', writer='pillow', fps=10, dpi=100)
 
 plt.tight_layout()
 plt.show()
