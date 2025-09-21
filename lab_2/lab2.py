@@ -89,7 +89,7 @@ history = [x.copy()]
 # Создаем фигуру с двумя subplots
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
-plt.pause(5)
+# plt.pause(5)
 # Первый subplot для графа
 sc = draw_graph(pos, adj, x, ax1, "t=0")
 
@@ -130,6 +130,7 @@ def update(t):
 
 # Создаем анимацию
 ani = FuncAnimation(fig, update, frames=T+1, interval=300, repeat=False)
+ani.save('./media/animation2.gif', writer='pillow', fps=10, dpi=100)
 
 plt.tight_layout()
 plt.show()
